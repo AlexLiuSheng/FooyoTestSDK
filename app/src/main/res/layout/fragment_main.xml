@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/btn_start_fooyo_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Start Fooyo Map Page with FooyoIndex"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_start_navi_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Start Fooyo Navigation Page"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_start_createPlan_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Start Fooyo Create Plan Page"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_set_Window_clcik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Set callback of  map infowindow"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_start_photo_collage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Start Photo Collage "
+        android:textAllCaps="false" />
+</LinearLayout>

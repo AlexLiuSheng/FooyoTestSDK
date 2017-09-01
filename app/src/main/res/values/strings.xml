@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sentosa</string>
+    <string name="explore">Explore</string>
+    <string name="plan">Plan</string>
+    <string name="map">Map</string>
+    <string name="cart">Cart</string>
+    <string name="more">More</string>
+</resources>

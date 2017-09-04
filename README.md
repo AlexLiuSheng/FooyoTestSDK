@@ -110,10 +110,10 @@ FooyoSDK.getSDKManager().setOnWindowDetailClickListener(new WindowDetailClickLis
                     }
                 });
 ```
-### Photo Collage
+### Add plan
 
 ```
- FooyoSDK.getSDKManager().startFooyoPhotoCollage(Context context);
+ FooyoSDK.getSDKManager().addToPlan(FooyoIndex fooyoIndex);
  
  ```
 

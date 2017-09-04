@@ -50,6 +50,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
                 });
                 break;
             case R.id.btn_start_photo_collage:
+
                 FooyoSDK.getSDKManager().startFooyoPhotoCollage(getActivity());
                 break;
 

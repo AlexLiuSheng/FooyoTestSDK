@@ -1,7 +1,7 @@
 # FooyoTestSDK For Android
  
 ## include
-- add follow script into your root build.gradle
+- add following script into your root build.gradle
  ```
  allprojects {
      repositories {
@@ -14,7 +14,7 @@
      }
  }
  ```
-- because of sdk using `databinding`,so you should add databinding into your module build.gradle
+- because of sdk using `databinding` lib,so you should add databinding into your module build.gradle
 ```
 android {
     ...
@@ -55,7 +55,7 @@ public class FooyoIndex implements Parcelable {
 Only `Hotspots` of `Non-linear Trails` will have `levelTwoId`. Their `levelOneId` is the `Non-linear Trail` Id.
 
 ### Initialize
-add follow code into your own `Application`
+add following code into your own `Application`
 
 ```
         FooyoSDK.init(Context application,boolean isDebug);
@@ -63,7 +63,7 @@ add follow code into your own `Application`
  
 ### BaseMap integration
 
-- if u want use base map (fragment).you can add it into your layout by adding a `FooyoSDKMapFragment`
+- if u want to use base map (fragment).you can add it into your layout by adding a `FooyoSDKMapFragment`
   
   - in xml layout eg.
   

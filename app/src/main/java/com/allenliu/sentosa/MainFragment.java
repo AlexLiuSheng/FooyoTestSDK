@@ -35,18 +35,18 @@ public class MainFragment extends Fragment implements View.OnClickListener {
         switch (view.getId()) {
             case R.id.btn_start_fooyo_page:
                 FooyoIndex fooyoIndex = new FooyoIndex();
-                fooyoIndex.setCategory("Interactive Trails");
-                fooyoIndex.setLevelOneId(457 + "");
+                fooyoIndex.setCategory("Attractions");
+                fooyoIndex.setLevelOneId(488 + "");
                 FooyoSDK.getSDKManager().startFooyoMapPage(getActivity(), fooyoIndex);
                 break;
             case R.id.btn_start_navi_page:
                 FooyoIndex start = new FooyoIndex();
-                start.setCategory("Interactive Trails");
-                start.setLevelOneId(457 + "");
+                start.setCategory("Attractions");
+                start.setLevelOneId(488 + "");
                 FooyoIndex end = new FooyoIndex();
                 end.setCategory("Interactive Trails");
                 end.setLevelOneId(6033 + "");
-                end.setLevelTwoId("hsf19fb436");
+                end.setLevelTwoId("hs36c4134d");
                 FooyoSDK.getSDKManager().startNavigation(getActivity(), start, end);
                 break;
             case R.id.btn_start_createPlan_page:

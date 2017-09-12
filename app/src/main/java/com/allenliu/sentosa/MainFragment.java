@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.blankj.utilcode.util.ToastUtils;
+
 import sg.fooyo.sdkosp.sdk.FooyoSDK;
 import sg.fooyo.sdkosp.sdk.listener.WindowDetailClickListener;
 import sg.fooyo.sdkosp.sdk.model.FooyoIndex;
@@ -26,17 +28,26 @@ public class MainFragment extends Fragment implements View.OnClickListener {
         view.findViewById(R.id.btn_start_createPlan_page).setOnClickListener(this);
         view.findViewById(R.id.btn_start_fooyo_page).setOnClickListener(this);
         view.findViewById(R.id.btn_start_navi_page).setOnClickListener(this);
-        view.findViewById(R.id.btn_start_photo_collage).setOnClickListener(this);
         return view;
     }
 
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_start_fooyo_page:
-                FooyoSDK.getSDKManager().startFooyoMapPage(getActivity(), new FooyoIndex());
+                FooyoIndex fooyoIndex = new FooyoIndex();
+                fooyoIndex.setCategory("Interactive Trails");
+                fooyoIndex.setLevelOneId(457 + "");
+                FooyoSDK.getSDKManager().startFooyoMapPage(getActivity(), fooyoIndex);
                 break;
             case R.id.btn_start_navi_page:
-                FooyoSDK.getSDKManager().startNavigation(getActivity(), new FooyoIndex(), new FooyoIndex());
+                FooyoIndex start = new FooyoIndex();
+                start.setCategory("Interactive Trails");
+                start.setLevelOneId(457 + "");
+                FooyoIndex end = new FooyoIndex();
+                end.setCategory("Interactive Trails");
+                end.setLevelOneId(6033 + "");
+                end.setLevelTwoId("hsf19fb436");
+                FooyoSDK.getSDKManager().startNavigation(getActivity(), start, end);
                 break;
             case R.id.btn_start_createPlan_page:
                 FooyoSDK.getSDKManager().startFooyoCreatePlan(getActivity());
@@ -45,13 +56,9 @@ public class MainFragment extends Fragment implements View.OnClickListener {
                 FooyoSDK.getSDKManager().setOnWindowDetailClickListener(new WindowDetailClickListener() {
                     @Override
                     public void onClick(FooyoIndex fooyoIndex) {
-
+                        ToastUtils.showShort(fooyoIndex.toString());
                     }
                 });
-                break;
-            case R.id.btn_start_photo_collage:
-
-                FooyoSDK.getSDKManager().startFooyoPhotoCollage(getActivity());
                 break;
 
 

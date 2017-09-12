@@ -38,11 +38,11 @@
         android:text="Set callback of  map infowindow"
         android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btn_start_photo_collage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <!--<Button-->
+        <!--android:id="@+id/btn_start_photo_collage"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
 
-        android:text="Start Photo Collage "
-        android:textAllCaps="false" />
+        <!--android:text="Start Photo Collage "-->
+        <!--android:textAllCaps="false" />-->
 </LinearLayout>

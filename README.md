@@ -28,7 +28,7 @@ android {
 -  add fooyo sdk dependency into your module build.gradle
 
 ```
-    compile 'com.allenliu:FooyoSdkOSP:1.8.3'
+    compile 'com.allenliu:FooyoSdkOSP:1.8.4'
 ```
 
 ## Usage
@@ -42,8 +42,8 @@ android {
 ```
 public class FooyoIndex implements Parcelable {
     private String category;
-    private int levelOneId;
-    private int levelTwoId;
+    private String levelOneId;
+    private String levelTwoId;
  }
 ```
 `FooyoIndex` is designed for an easy communication between the base system and the SDK functions. For all the locations, trails and the hotspots of the trails, they would have their own `FooyoIndex` for a better reference. `FooyoIndex` incldues the following parameters:

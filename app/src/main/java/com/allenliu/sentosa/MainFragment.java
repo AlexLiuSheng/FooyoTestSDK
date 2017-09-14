@@ -46,7 +46,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
                 FooyoIndex end = new FooyoIndex();
                 end.setCategory("Interactive Trails");
                 end.setLevelOneId(6033 + "");
-                end.setLevelTwoId("hs36c4134d");
+                end.setLevelTwoId("hsf19fb436");
                 FooyoSDK.getSDKManager().startNavigation(getActivity(), start, end);
                 break;
             case R.id.btn_start_createPlan_page:

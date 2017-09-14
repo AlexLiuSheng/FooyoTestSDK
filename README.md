@@ -28,7 +28,7 @@ android {
 -  add fooyo sdk dependency into your module build.gradle
 
 ```
-    compile 'com.allenliu:FooyoSdkOSP:1.8.4'
+    compile 'com.allenliu:FooyoSdkOSP:1.8.6'
 ```
 
 ## Usage

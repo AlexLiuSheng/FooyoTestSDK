@@ -28,7 +28,7 @@ android {
 -  add fooyo sdk dependency into your module build.gradle
 
 ```
-    compile 'com.allenliu:FooyoSdkOSP:1.8.6'
+   compile 'com.allenliu:FooyoSdkOSPDev:1.0.1'
 ```
 
 ## Usage
@@ -97,7 +97,7 @@ Start Navigation page ,you can deliver two param.One start FooyoIndex,one end.
 ### Create Plan
 
 ```
-  FooyoSDK.getSDKManager().startFooyoCreatePlan(Context context);
+  FooyoSDK.getSDKManager().startFooyoCreatePlan(Context context,String userId);
 ```
 
 ### Delegate Function
@@ -113,7 +113,12 @@ FooyoSDK.getSDKManager().setOnWindowDetailClickListener(new WindowDetailClickLis
 ### Add plan
 
 ```
- FooyoSDK.getSDKManager().addToPlan(FooyoIndex fooyoIndex);
+ FooyoSDK.getSDKManager().addToPlan(String userId,FooyoIndex fooyoIndex);
  
  ```
 
+### View Plan
+
+```
+ FooyoSDK.getSDKManager().viewMyPlans(String userId);
+```

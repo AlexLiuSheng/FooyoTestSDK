@@ -23,7 +23,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_main,null);
+        View view = inflater.inflate(R.layout.fragment_main, null);
         view.findViewById(R.id.btn_set_Window_clcik).setOnClickListener(this);
         view.findViewById(R.id.btn_start_createPlan_page).setOnClickListener(this);
         view.findViewById(R.id.btn_start_fooyo_page).setOnClickListener(this);
@@ -50,7 +50,8 @@ public class MainFragment extends Fragment implements View.OnClickListener {
                 FooyoSDK.getSDKManager().startNavigation(getActivity(), start, end);
                 break;
             case R.id.btn_start_createPlan_page:
-                FooyoSDK.getSDKManager().startFooyoCreatePlan(getActivity());
+                //deliver a userId
+                FooyoSDK.getSDKManager().startFooyoCreatePlan(getActivity(), "1");
                 break;
             case R.id.btn_set_Window_clcik:
                 FooyoSDK.getSDKManager().setOnWindowDetailClickListener(new WindowDetailClickListener() {
